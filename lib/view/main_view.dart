@@ -16,8 +16,8 @@ class MainView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 5,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: context.isLandscape ? 10 : 5,
       ),
       itemCount: 100,
       itemBuilder: (BuildContext context, int index) {
