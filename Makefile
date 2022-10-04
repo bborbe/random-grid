@@ -19,3 +19,6 @@ format:
 
 deps: 
 	flutter pub get
+
+xcode:
+	open -a Xcode ios
